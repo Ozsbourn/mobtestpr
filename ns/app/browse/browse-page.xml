@@ -1,0 +1,25 @@
+<Page
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar>
+        <NavigationButton visibility="hidden"></NavigationButton>
+        <GridLayout columns="50, *">
+            <Label class="action-bar-title" text="Animation page" colSpan="2"/>
+            <Label class="fas" text="&#xf0c9;" tap="onDrawerButtonTap"/>
+        </GridLayout>
+    </ActionBar>
+
+    <!-- I have no idea how make an animation with this framework -->
+    <GridLayout columns="*, *, *" rows="*, *, *">
+        <GridLayout columns="150" rows="150" column="1" row="1" id="outside-box">
+            <Label text="" row="0" col="0" backgroundColor="#43B3F4" textAlignment="center" />
+            <GridLayout columns="125" rows="125" id="inside-box">
+                <Label text="" row="0" col="0" backgroundColor="#075B88" textAlignment="center" />
+                <GridLayout columns="100" rows="100" id="inside2-box">
+                    <Label text="" row="0" col="0" backgroundColor="#1089CA" textAlignment="center" />
+                </GridLayout>
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</Page>
